@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Progress – LearnMate AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Your progress</h1>
+      <button id="refresh-btn" class="btn btn-primary">Refresh</button>
+    </div>
+
+    <div id="error" class="alert-error" hidden></div>
+
+    <div id="stats" class="grid"></div>
+
+    <div class="section-head">
+      <h2>Subject progress</h2>
+    </div>
+    <div id="subject-progress" class="card"></div>
+
+    <div class="section-head">
+      <h2>Topic attempts</h2>
+    </div>
+    <div id="topic-table" class="card table-wrap"></div>
+
+    <div class="section-head">
+      <h2>Weak topics</h2>
+    </div>
+    <div id="weak-topics" class="card"></div>
+
+    <div class="section-head">
+      <h2>Recommendations</h2>
+    </div>
+    <div id="recommendations" class="card"></div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tutor – LearnMate AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-layout">
+  <nav id="navbar" class="navbar"></nav>
+
+  <main class="container">
+    <div class="page-header">
+      <div>
+        <h1>AI Tutor</h1>
+        <p class="muted">Ask any doubt. The tutor explains it in simple, step-by-step English.</p>
+      </div>
+    </div>
+
+    <div class="chat-layout">
+      <div class="card">
+        <div class="form-group">
+          <label for="topic-input"><strong>Topic (optional)</strong></label>
+          <input id="topic-input" type="text" maxlength="100" placeholder="e.g. Python loops">
+        </div>
+        <p class="muted">Adding a topic helps the tutor give a better answer.</p>
+      </div>
+
+      <label for="question-input" class="muted"><strong>Type your doubt</strong></label>
+      <form id="chat-form" class="chat-form">
+        <textarea id="question-input" rows="2" maxlength="1000" placeholder="Type your doubt here..." required></textarea>
+        <button type="submit" id="send-btn" class="btn btn-primary">Send</button>
+      </form>
+
+      <div id="chat-box" class="chat-box" aria-live="polite"></div>
+
+      <div class="chat-suggestions" id="suggestions">
+        <button class="chat-chip" type="button">Explain pointers in C</button>
+        <button class="chat-chip" type="button">What is a Java class?</button>
+        <button class="chat-chip" type="button">Give an example of a Python list</button>
+      </div>
+
+      <div id="chat-error" class="alert-error" hidden></div>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/tutor.js"></script>
+</body>
+</html>

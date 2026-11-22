@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard – LearnMate AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 id="greeting">Welcome back</h1>
+      <p class="muted">Pick a subject or continue with a recommended topic.</p>
+    </div>
+
+    <div id="error" class="alert-error" hidden></div>
+
+    <div id="stats" class="grid"></div>
+
+    <div class="section-head">
+      <h2>Your subjects</h2>
+      <p class="muted">Choose a subject to explore its topics</p>
+    </div>
+    <div id="subjects" class="grid"></div>
+
+    <div class="section-head">
+      <h2>Recommended for you</h2>
+    </div>
+    <div id="recommendations"></div>
+
+    <div class="card hero-strip">
+      <div>
+        <h3>Stuck on a concept?</h3>
+        <p class="muted">Ask the AI tutor to explain it in simple words.</p>
+      </div>
+      <a class="btn btn-primary" href="tutor.html">Ask AI Tutor</a>
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

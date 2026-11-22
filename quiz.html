@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic Quiz – LearnMate AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+
+  <main class="container">
+    <a id="back-link" class="btn btn-outline" href="dashboard.html">← Back to subject</a>
+
+    <div class="page-header">
+      <h1 id="topic-title"></h1>
+      <p class="muted" id="subject-name"></p>
+    </div>
+
+    <div id="error" class="alert-error" hidden></div>
+
+    <div class="card">
+      <h2>Learn</h2>
+      <div id="content" class="topic-content"></div>
+    </div>
+
+    <div class="card">
+      <h2>Practice quiz</h2>
+      <form id="quiz-form">
+        <div id="questions"></div>
+        <p id="quiz-message" class="muted"></p>
+        <div class="quiz-actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-lg">Submit quiz</button>
+          <button type="button" id="retake-btn" class="btn btn-outline" hidden>Retake quiz</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="result" class="card" hidden></div>
+
+    <a id="next-btn" class="btn btn-primary" href="#" hidden>Next topic →</a>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
